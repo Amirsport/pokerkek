@@ -20,6 +20,7 @@ func (s *Server) Registration(c *gin.Context) {
 	// функция заноса данных в бд
 	if err := s.prov.Registration(u); err != nil {
 		c.JSON(500, provider.Message{Err: "SQL error"})
+		return
 	}
 	fmt.Println(*u.Login, *u.Password)
 	c.JSON(200, provider.Message{Err: "ok"})

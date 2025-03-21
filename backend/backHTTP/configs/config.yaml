@@ -2,7 +2,7 @@ ip: "127.0.0.0"
 port: 8080
 db:
   host: "localhost"
-  port: "5432"
-  dbname: "poker_DB"
-  password: "123"
+  port: 5432
+  dbname: "poker_db"
+  password: "popa"
   user: "maksim"
